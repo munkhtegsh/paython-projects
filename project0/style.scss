@@ -1,0 +1,92 @@
+$white: #ffffff;
+$big: 0.8rem;
+
+html {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    margin: 1rem;
+
+    background: $white
+}
+
+h2 {
+    color: rgb(120, 80, 60);
+}
+
+img {
+    margin: 1rem 1rem 1rem 0;
+    float: left;
+}
+sass --watch input.scss:output.css
+
+ol {
+    color: rgb(120, 80, 60);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background: #232323;
+    padding: 1rem 0 1rem 1rem;
+    margin-bottom: 1.5rem;
+}
+
+
+#text {
+    padding-top: 1rem;
+}
+
+.questions {
+    font-weight: bold;
+}
+ 
+span > a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-right: 1.4rem;
+}   
+main p {
+    font-style: italic
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h2 + p {
+    font-size: 1.1rem;
+}
+
+li:nth-child(4) {
+    color: rgb(235, 235, 15);
+}
+
+@media (max-width: 499px) {
+    body {
+        background: #bada55;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.row {
+    .nestedSass {
+        color: rgb(84, 48, 48);
+    }
+}
+
+%inheritenceAwesome {
+    color:rgb(79, 62, 62);
+    font-style: italic;
+    font-size: $big;
+}
+
+.inherited {
+   @extend %inheritenceAwesome; 
+}

@@ -1,0 +1,82 @@
+html {
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  margin: 1rem;
+  background: #ffffff;
+}
+
+h2 {
+  color: #78503c;
+}
+
+img {
+  margin: 1rem 1rem 1rem 0;
+  float: left;
+}
+
+sass --watch input.scss:output.css ol {
+  color: #78503c;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  background: #232323;
+  padding: 1rem 0 1rem 1rem;
+  margin-bottom: 1.5rem;
+}
+
+#text {
+  padding-top: 1rem;
+}
+
+.questions {
+  font-weight: bold;
+}
+
+span > a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding-right: 1.4rem;
+}
+
+main p {
+  font-style: italic;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h2 + p {
+  font-size: 1.1rem;
+}
+
+li:nth-child(4) {
+  color: #ebeb0f;
+}
+
+@media (max-width: 499px) {
+  body {
+    background: #bada55;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+.row .nestedSass {
+  color: #543030;
+}
+
+.inherited {
+  color: #4f3e3e;
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+/*# sourceMappingURL=style.css.map */
